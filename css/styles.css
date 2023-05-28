@@ -122,7 +122,6 @@ a {
 .global-header a.email-phone {
   color: #757575;
 }
-
 .global-header a.link:hover,
 .global-header a.link:focus {
   color: var(--link-active-color);
@@ -131,16 +130,22 @@ a {
   width: 16px;
   height: 12px;
   margin-right: 10px;
+  fill: #757575;
 }
 .smartphone-icon {
   width: 10px;
   height: 16px;
   margin-right: 10px;
+  fill: #757575;
 }
-.header-contact-email:hover,
-.header-contact-email:focus,
-.header-contact-phone:hover,
-.header-contact-phone:focus {
+.header-contact-email a:hover,
+.header-contact-email a:focus,
+.header-contact-phone a:hover,
+.header-contact-phone a:focus,
+.header-contact-email .envelope-icon:hover,
+.header-contact-email .envelope-icon:focus,
+.header-contact-phone .smartphone-icon:hover,
+.header-contact-phone .smartphone-icon:focus {
   color: var(--link-active-color);
   fill: var(--link-active-color);
 }
@@ -207,7 +212,6 @@ a {
   margin-top: 0;
   width: 270px;
 }
-
 .item p {
   margin-top: 10px;
 }
@@ -230,7 +234,6 @@ a {
   gap: 30px;
   padding: 0;
 }
-
 .item-team {
   background-color: #ffffff;
   border-radius: 0 0 4px 4px;
@@ -250,25 +253,24 @@ a {
   margin-block-end: 0;
   padding-top: 20px;
 }
-.icons-list {
+.icons-employee {
   display: flex;
   justify-content: space-evenly;
-  align-items: center;
   padding-top: 16px;
-  padding-bottom: 30px;
 }
-.icons-list a:hover,
-.icons-list a:focus {
-  color: var(--link-active-color);
-  background: var(--link-active-color);
-  cursor: pointer;
+.icon-svg-ots {
   border-radius: 50%;
-  width: 30px;
-  height: 30px;
+  fill: #ffffff;
+}
+.icon-svg-ots:hover,
+.icon-svg-ots:focus {
+  color: var(--link-active-color);
+  background-color: var(--link-active-color);
 }
 .icons-list svg {
-  width: 20px;
-  height: 20px;
+  width: 44px;
+  height: 44px;
+  fill: #afb1b8;
 }
 
 /*Regular customers section*/
@@ -291,6 +293,7 @@ a {
 .icon-svg {
   width: 106px;
   height: 60px;
+  fill: #afb1b8;
 }
 .item-svg:hover,
 .item-svg:focus {
@@ -315,7 +318,6 @@ a {
   text-decoration: none;
   background: #2f303a;
 }
-
 .global-footer {
   background: #2f303a;
   font-weight: 400;
@@ -343,7 +345,6 @@ a {
   font-size: 14px;
   margin-bottom: 10px;
 }
-
 .email-phone-footer {
   font-style: normal;
   font-weight: 400;
@@ -353,10 +354,23 @@ a {
   color: rgba(255, 255, 255, 0.6);
   background: #2f303a;
 }
+.footer-icons {
+  display: flex;
+  gap: 70px;
+  justify-content: flex-start;
+}
 .icons-footer-list {
   display: flex;
   flex-direction: column;
   margin-left: 0;
+  padding-left: 70px;
+}
+.icons-footer {
+  display: flex;
+  gap: 10px;
+}
+.footer-contact-info {
+  width: 231px;
 }
 .footer-icons h5 {
   font-family: "Roboto";
@@ -370,34 +384,16 @@ a {
   margin-top: 0;
   margin-bottom: 20px;
 }
-.footer-social-links {
-  display: flex;
-  width: 206px;
-  gap: 20px;
-  justify-content: flex-start;
-  margin: 0;
+.icon-svg-footer {
+  width: 44px;
+  height: 44px;
   border-radius: 50%;
-}
-.footer-social-links svg {
-  width: 20px;
-  height: 20px;
   background: #2f303a;
 }
-.footer-icons {
-  display: flex;
-  gap: 70px;
-  justify-content: flex-start;
-}
-.footer-contact-info {
-  width: 231px;
-}
-.footer-social-links a:hover,
-.footer-social-links a:focus {
+.icons-footer a:hover,
+.icons-footer a:focus {
   color: var(--link-active-color);
   fill: var(--link-active-color);
-  border-radius: 50%;
-  width: 30px;
-  height: 30px;
 }
 
 /*Portfolio page*/
@@ -417,7 +413,6 @@ a {
   padding: 6px 22px;
   margin: 0 auto;
 }
-
 .button-portfolio:hover,
 .button-portfolio:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
@@ -431,7 +426,6 @@ a {
   justify-content: center;
   border-radius: 4px;
 }
-
 .portfolio-pic {
   font-weight: 400;
   font-size: 16px;
@@ -439,7 +433,6 @@ a {
   letter-spacing: 0.03em;
   color: var(--portfolio-nd-text-color);
 }
-
 .card-set-portfolio-pic li:hover,
 .card-set-portfolio-pic li:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
@@ -455,14 +448,12 @@ a {
   align-items: center;
   cursor: pointer;
 }
-
 .item-portfolio-pic {
   flex-basis: calc((100% - 90px) / 3);
   margin: 0;
   background-color: #ffffff;
   border: 1px solid #eeeeee;
 }
-
 .item-portfolio-pic h3 {
   margin-top: 20px;
   margin-left: 24px;
