@@ -108,15 +108,22 @@ ul {
 .email-phone {
   display: flex;
 }
-.global-header,
-a {
+.global-header a {
   background: var(--header-background-color);
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  color: var(--text-color);
+  color: var(--logo-header-color);
   text-decoration: none;
+}
+.global-header .logo-header {
+  font-family: var(--logo-font-family);
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: var(--logo-header-color);
 }
 .global-header a.email-phone {
   color: #757575;
@@ -259,7 +266,6 @@ a {
 }
 .icon-svg-ots {
   border-radius: 50%;
-  fill: #ffffff;
 }
 .icon-svg-ots:hover,
 .icon-svg-ots:focus {
@@ -269,7 +275,6 @@ a {
 .icons-list svg {
   width: 44px;
   height: 44px;
-  fill: #afb1b8;
 }
 
 /*Regular customers section*/
